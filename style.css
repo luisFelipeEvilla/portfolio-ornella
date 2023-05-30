@@ -9,6 +9,11 @@ body {
     margin: 0;
     font-family: 'Overlove', sans-serif;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/content-background.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 .header {
@@ -77,29 +82,41 @@ body {
 }
 
 .content {
-    background-image: url(images/content-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
     width: 100%;
-    z-index: 100;
+    margin-top: 0;
+    margin: 40px 0;
+}
+
+.capsula {
+    margin-top: 80px;
+    background-image: url(images/content-background.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 .capsula-title {
     text-align: center;
     font-size: 80px;
     font-weight: 700;
+    margin-top: 0;
 }
 
 .capsula-images {
     display: flex;
-    gap: 2rem;
+    gap: 10rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .capsula-images img {
     max-height: 400px !important;
     width: 380px;
+}
+
+.capsula-images img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
