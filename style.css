@@ -1,0 +1,74 @@
+/* import font */
+@font-face {
+    font-family: 'Overlove';
+    src: url(fonts/Overlove.otf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Overlove', sans-serif;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 10px;
+    align-items: flex-end;
+}
+
+.header .logo img {
+    height: 30px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.header-link:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    padding-top: 40px;
+    background-color: #f3dbfa;
+    display: flex;
+}
+
+.hero-banner {
+    width: 600px;
+    height: 400px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-description {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+
+
